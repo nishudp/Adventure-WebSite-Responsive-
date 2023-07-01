@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ADVENTURE </title> 
+        <!--- #### CSS #### -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!--- NavBar -->
+
+        <nav class="navbar">
+            <h1 class="logo"> Adventure WebSite Created by NISHA PATEL <br> Mobile Number: +1 647-890-4297 <br> Email-id : nishu61097p@gmail.com</h1>  
+            <ul class="nav-links">
+                <li class="active"><a href="#"></a> Home </li>
+                <li><a href="#"></a> Tours </li>
+                <li><a href="#"></a> Explore </li>
+                <li><a href="#"></a> About </li>
+                <li class="ctn"><a href="#"></a> contact </li>
+            </ul>
+            <img src="menu-btn.jpg" alt="" class="menu-btn">
+        </nav>
+
+        <header>
+            <div class="header-content">
+                <h2> Explore The Colourful World </h2>
+                <div class="line"></div>
+                <h1>A WONDERFUL GIFT </h1>
+                <a href="#" class="ctn"> Learn More </a>     <!--- create an ancore tag (to create button) -->
+            </div>
+        </header>
+
+        <!--- ## Events ## -->
+        <section class="events">
+            <div class="title">
+                <h1> Upcoming Events </h1>
+                <div class="line"></div>
+            </div>
+            <!-- ### Create a two coloum for two image and two text discription ###-->
+            <div class="row">
+                <div class="col">
+                    <img src="image1.jpg" alt="" >
+                    <h4> Everest Camp Trek </h4>
+                    <p> There are two base camps on Mount Everest, on opposite sides of the mountains: South Base Camp is in Nepal at an altitude of 5,364 metres, while North Base Camp is in Tibet, China at 5,150 metres. </p>
+                    <a href="#" class="ctn"> Lern More </a>
+                </div>
+
+                <div class="col">
+                    <img src="image2.jpg" alt="" >
+                    <h4> Walking Holidays </h4>
+                    <p> There are two base camps on Mount Everest, on opposite sides of the mountains: South Base Camp is in Nepal at an altitude of 5,364 metres, while North Base Camp is in Tibet, China at 5,150 metres. </p>
+                    <a href="#" class="ctn"> Lern More </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <div class="explore-content">
+                <h1> Explore The World </h1>
+                <div class="line"></div>
+                <p> Explore is a verb that means "to travel in or through." You might explore an island, a European city, or the rooms of an unfamiliar house. </p>
+                <a href="#" class="ctn"> Learn More </a>
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1> UPCOMING TOUR & DESTINATION </h1>
+                    <div class="line"></div>
+                    <P> All this plus an amazing topography of the region offers exciting opportunities for trekking in Manali. Your trip to this wonderland is incomplete without experiencing the thrill of Manali trekking with multitude of Manali trekking packages.  </P>
+                    <a href="#" class="ctn"> Learn More </a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="image4.1.jpg" alt="">
+                        <img src="image4.2.jpg" alt="">
+                        <img src="image4.3.png" alt="">
+                        <img src="image4.4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p> | Phone: (+1) 647-404-4297 | Email: nishu61097p@gmail.com</p>
+            <p> Copyright @ ###### </p>
+        </section>
+
+        <script>
+            /* ##### used to make working menu-btn ####
+               inside the counce same name has been given after the dot */
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+        
+    </body>
+
+</html>
